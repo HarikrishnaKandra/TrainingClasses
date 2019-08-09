@@ -40,7 +40,7 @@ public static void main(String[] args) throws InterruptedException
 	    System.out.println("Y-Value" + Y);
 	    
 	    Thread.sleep(5000);
-	    //Setting Position
+	    //Setting Position hicvfghyfuyfgcvuy
 	    
 	    Point P = new Point(20,80);
 	    driver.manage().window().setPosition(P);
