@@ -9,7 +9,7 @@ public class Dimensionandpostion
 {
 public static void main(String[] args) throws InterruptedException 
 {
-	//Chrome Browser 
+	   //Chrome Browser 
 		System.setProperty("webdriver.chrome.driver","D:\\Setupfiles\\chromedriver_win32\\chromedriver.exe");
 		
 		// Webdriver is an Interface 
@@ -19,14 +19,14 @@ public static void main(String[] args) throws InterruptedException
 		// get() this method loads a new webpage in the current browser window.
 	    driver.get("https://www.gmail.com");	
 	    
+	    //
 	    driver.manage().window().maximize();
 	    
 	    //Size
 	    int H=driver.manage().window().getSize().getHeight();
 	    int W=driver.manage().window().getSize().getWidth();
 	    
-	    System.out.println(H);
-	    System.out.println(W);
+	    System.out.println(H +" ," + W );
 	    
 	    Thread.sleep(5000);
 	    Dimension d =new Dimension(800,300);
@@ -36,8 +36,7 @@ public static void main(String[] args) throws InterruptedException
 	    int X=driver.manage().window().getPosition().getX();
 	    int Y=driver.manage().window().getPosition().getY();
 	    
-	    System.out.println("X-Value" + X);
-	    System.out.println("Y-Value" + Y);
+	    System.out.println(X +" , " + Y);
 	    
 	    Thread.sleep(5000);
 	    //Setting Position 
